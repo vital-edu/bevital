@@ -1,6 +1,6 @@
 body {
     background-color: rgba(255,255,255,var(--bg-opacity));
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .app_badge img {
@@ -13,15 +13,70 @@ img.ios_badge {
 
 main {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main h1 {
+    text-align: center;
 }
 
 .badges {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 8px;
+}
+
+.contact_form {
+    background-color: #4a4a4a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 2;
+    padding: 8px;
+}
+
+.contact_form form {
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_form form input,
+.contact_form form textarea,
+.contact_form form button {
+    height: 36px;
+    margin-bottom: 22px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    padding: 5px 15px;
+    outline: 0;
+}
+
+.contact_form form textarea {
+    min-height: 120px;
+}
+
+.contact_form h1 {
+    font-family: SFUIText-Bold;
+    margin-top: 24px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact_form p{
+    max-width: 600px;
+    font-family: SFUIText;
+    font-size: 20px;
+    text-align: center;
 }
