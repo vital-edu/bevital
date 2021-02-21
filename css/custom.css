@@ -24,6 +24,15 @@ main h1 {
     text-align: center;
 }
 
+.app_logo {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    background-size: 201px auto;
+    background-image: url(../img/app_logo.png);
+    background-repeat: no-repeat;
+}
+
 .badges {
     display: flex;
     flex-wrap: wrap;
